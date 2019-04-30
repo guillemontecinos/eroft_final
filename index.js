@@ -1,3 +1,5 @@
+const PORT = process.env.PORT || 8000
+
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
@@ -44,6 +46,6 @@ app.get('/memory', function(req, res){
 
 
 
-app.listen(3000, function(){
-    console.log('App listening at port 3000')
+app.listen(PORT, function(){
+    console.log('App listening at port ' + PORT)
 })
