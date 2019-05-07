@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "mustache-express": "^1.2.8"
+    "mustache-express": "^1.2.8",
+    "pg": "^7.10.0",
+    "puppeteer": "^1.15.0"
   }
 }
