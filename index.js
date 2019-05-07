@@ -77,7 +77,7 @@ app.get('/memory', function(req, res){
 })
 
 let scrape = async (loc) => {
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch(args:['--no-sandbox'])
     const page = await browser.newPage()
     await page.goto('https://www.latlong.net/')
     await page.type('#place', loc)
