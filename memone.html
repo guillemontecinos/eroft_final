@@ -1,14 +1,18 @@
 <html>
     <head></head>
-    <body>
-        <h1 id="header"></h1>
+    <body style="background: rosybrown; margin: 3em; display: block;">
+        <div>
+            <p style="font-family:Trebuchet MS,Helvetica,sans-serif;font-style:normal;font-size:15px;color: white;width: 140;position:relative;border-style:solid;padding:3px">
+                Cartographic Oracle
+            </p>
+        </div>
+        <h1 id="header" style="font-family:Trebuchet MS,Helvetica,sans-serif;font-style:normal;font-size:30px;color: white;position:relative;"></h1>
         <div id="mapHolder"></div>
         <script>
-            let ask_for_memory = ["What happened here that is meaningful to you?",
-                                    "Take a look around. What do you remember?",
-                                    "How does this place speak to who you are?",
-                                    "Share a memory of yours in here.",
-                                    "Why is this place important to you?"]
+            let ask_for_memory = ["How is this image meaningful to you?",
+                                    "Take a look around. What do you recognize?",
+                                    "How does this place speak to you?",
+                                    "Share a memory that relates to this image."]
             let prompt = ask_for_memory[Math.floor(Math.random() * ask_for_memory.length)]
             document.getElementById("header").innerHTML = prompt
         </script>
@@ -20,7 +24,7 @@
             document.getElementById('mapHolder').appendChild(x)
         </script>
 
-        <form action="/memory" method="POST">
+        <form action="/memory" method="POST" style="padding-top:20px;">
             <!-- <input type="text" name="memory" placeholder="Insert text." style= "width:600; height:20"> -->
             <input type="text" name="memory" style= "width:600; height:20" autocomplete="off">
             <input type="submit" name="Submit memory!">

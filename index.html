@@ -1,9 +1,14 @@
 <html>
     <head></head> 
-    <body style="background-image: url(/assets/background.jpg)">
-        <h1 id="header" style="font-family:Trebuchet MS,Helvetica,sans-serif;font-style:normal;font-size:30px;color: white;position:relative;padding: 20px;"></h1>
-        <form action="/" method="POST">
-            <input type="text" name="location" placeholder="Insert a location or an address" autocomplete="off">
+    <body style="background: rosybrown; margin: 3em; display: block;">
+        <div>
+            <p style="font-family:Trebuchet MS,Helvetica,sans-serif;font-style:normal;font-size:15px;color: white;width: 140;position:relative;border-style:solid;padding:3px">
+                Cartographic Oracle
+            </p>
+        </div>
+        <h1 id="header" style="font-family:Trebuchet MS,Helvetica,sans-serif;font-style:normal;font-size:30px;color: white;position:relative;"></h1>
+        <form action="/" method="POST" style="padding-top:20px;">
+            <input type="text" name="location" placeholder="Insert a very detailed address." autocomplete="off" style="width:400px;">
             <input type="submit" value="Submit">
         </form>
         <script>
